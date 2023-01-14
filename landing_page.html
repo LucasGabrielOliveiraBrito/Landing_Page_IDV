@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/landing_page.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Cozinha Escola</title>
+
+    <script>
+        function enviar() {
+            alert('Seus dados foram enviados com sucesso!')
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./img/logo-idv.png" alt="Imagem da logo">
+        </div>
+    </header>
+    <main>
+        <div id="nome">
+            <h2>O que é Lorem Ipsum?</h2>
+            <p>
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão.
+                 Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500,
+                  quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
+                   Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica,
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e,
+                     mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+            </p>
+        </div>
+        <asside>
+            <h2>Cozinha Escola</h2>
+            <form 
+                action="https://sheetdb.io/api/v1/idk2kg0y0euil" 
+                method="POST"
+                name="InscritosCozinhaEscola">
+
+                <div id="form_alerts"></div>
+                <input name="data[nome]" id="name" type="text" placeholder="Nome">
+                <input name="data[email]" id="email" type="email" placeholder="E-mail">
+                <input name="data[numero]" id="num" type="text" placeholder="Insira o Nº Celular com o DDD">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Selecione o curso</label>
+                    <select name="data[cursos]" class="form-control" id="selecionarCurso">
+                        <option>Doces</option>
+                        <option>Salgados</option>
+                        <option>Reaproveitamento</option>
+                        <option>Bebês</option>
+                        <option>Cortes</option>
+                    </select>
+                </div>
+                <div id="checkbox-1">
+                    <input type="checkbox" id="whats" name="data[receberWhats]" checked>
+                    <label for="whats">Autorizo receber notificações via WhatsApp</label>
+                </div>
+                <div id="checkbox-2">
+                    <input type="checkbox" id="email" name="data[receberEmail]" checked>
+                    <label for="email">Autorizo receber notificações via E-mail</label>
+                </div>
+                <input type="submit" onclick="enviar()" value="Enviar">
+            </form>
+        </asside>
+    </main>
+</html>
